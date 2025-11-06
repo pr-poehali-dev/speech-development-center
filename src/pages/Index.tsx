@@ -14,55 +14,55 @@ const Index = () => {
 
   const specialists = [
     {
-      name: "Екатерина Смирнова",
+      name: "Василина Петровна",
+      role: "Руководитель центра",
+      experience: "Высшее педагогическое образование",
+      description: "Координация учебного процесса, консультации родителей"
+    },
+    {
+      name: "Логопед центра",
       role: "Логопед-дефектолог",
-      experience: "12 лет опыта",
-      description: "Коррекция речевых нарушений, работа с детьми от 2 лет"
+      experience: "Профессиональная подготовка",
+      description: "Коррекция речевых нарушений, развитие артикуляции"
     },
     {
-      name: "Анна Петрова",
-      role: "Нейропсихолог",
-      experience: "8 лет опыта",
-      description: "Развитие когнитивных функций, подготовка к школе"
-    },
-    {
-      name: "Мария Иванова",
-      role: "Сенсорный терапевт",
-      experience: "10 лет опыта",
-      description: "Сенсорная интеграция, развитие моторики"
+      name: "Педагоги центра",
+      role: "Учителя начальных классов",
+      experience: "Опытные специалисты",
+      description: "Подготовка к школе по современным методикам"
     }
   ];
 
   const services = [
-    {
-      icon: "MessageCircle",
-      title: "Логопедия",
-      description: "Коррекция звукопроизношения, развитие речи, работа над дикцией"
-    },
-    {
-      icon: "Brain",
-      title: "Нейропсихология",
-      description: "Развитие памяти, внимания, мышления и других когнитивных функций"
-    },
-    {
-      icon: "Hand",
-      title: "Сенсорная интеграция",
-      description: "Улучшение восприятия и обработки сенсорной информации"
-    },
     {
       icon: "BookOpen",
       title: "Подготовка к школе",
       description: "Комплексная программа развития для будущих первоклассников"
     },
     {
-      icon: "Users",
-      title: "Групповые занятия",
-      description: "Развитие социальных навыков в малых группах"
+      icon: "MessageCircle",
+      title: "Работа с логопедом",
+      description: "Коррекция речевых нарушений, постановка звуков, развитие речи"
     },
     {
-      icon: "Sparkles",
-      title: "Творческие мастерские",
-      description: "Рисование, лепка, развитие мелкой моторики"
+      icon: "Users",
+      title: "Малые классы",
+      description: "Не более 12-14 учеников в классе для индивидуального подхода"
+    },
+    {
+      icon: "School",
+      title: "Оборудованные аудитории",
+      description: "Современное оснащение для комфортного обучения"
+    },
+    {
+      icon: "GraduationCap",
+      title: "Опытные педагоги",
+      description: "Квалифицированные специалисты с большим стажем работы"
+    },
+    {
+      icon: "Heart",
+      title: "Индивидуальный подход",
+      description: "Учитываем особенности каждого ребёнка"
     }
   ];
 
@@ -101,11 +101,11 @@ const Index = () => {
           <div className="grid md:grid-cols-2 gap-12 items-center">
             <div className="space-y-6 animate-fade-in">
               <h1 className="text-4xl md:text-6xl font-bold leading-tight">
-                Центр речевого и функционального развития 
-                <span className="text-primary"> Дружок</span>
+                Образовательный центр
+                <span className="text-primary"> «Дружок»</span>
               </h1>
               <p className="text-xl text-muted-foreground">
-                Помогаем детям раскрыть свой потенциал через профессиональный и заботливый подход
+                Подготовка к школе и работа с логопедом в Улан-Удэ
               </p>
               <div className="flex gap-4">
                 <Button size="lg" className="rounded-full">
@@ -133,9 +133,9 @@ const Index = () => {
           <div className="max-w-3xl mx-auto text-center space-y-6">
             <h2 className="text-3xl md:text-5xl font-bold">О центре</h2>
             <p className="text-lg text-muted-foreground leading-relaxed">
-              АНО "Центр речевого и функционального развития Дружок" — это команда профессионалов, 
-              которые с любовью и заботой помогают детям преодолевать трудности в развитии. 
-              Мы создали комфортное пространство, где каждый ребёнок чувствует себя особенным.
+              Образовательный центр «Дружок» в Улан-Удэ — это профессиональная команда педагогов, 
+              которые с любовью и заботой готовят детей к школе. Малые классы (12-14 учеников), 
+              оборудованные аудитории и работа с логопедом — всё для успешного развития вашего ребёнка.
             </p>
             <div className="grid md:grid-cols-3 gap-8 pt-8">
               <Card className="text-center border-2 hover:border-primary transition-colors rounded-3xl">
@@ -236,7 +236,7 @@ const Index = () => {
                   </CardTitle>
                 </CardHeader>
                 <CardContent>
-                  <p>г. Москва, ул. Примерная, д. 10</p>
+                  <p>г. Улан-Удэ, ул. Ключевская, 34 к. 23</p>
                 </CardContent>
               </Card>
               <Card className="rounded-3xl">
@@ -247,7 +247,10 @@ const Index = () => {
                   </CardTitle>
                 </CardHeader>
                 <CardContent>
-                  <p>+7 (495) 123-45-67</p>
+                  <p className="space-y-1">
+                    <span className="block">8 (902) 167-09-17 — администратор</span>
+                    <span className="block">8 (924) 650-95-35 — Василина Петровна</span>
+                  </p>
                 </CardContent>
               </Card>
               <Card className="rounded-3xl">
@@ -258,7 +261,7 @@ const Index = () => {
                   </CardTitle>
                 </CardHeader>
                 <CardContent>
-                  <p>info@druzhok-center.ru</p>
+                  <p>vk.com/druzhok_buryatia</p>
                 </CardContent>
               </Card>
             </div>
@@ -310,7 +313,7 @@ const Index = () => {
             <span className="text-2xl font-bold text-primary">Дружок</span>
           </div>
           <p className="text-muted-foreground">
-            АНО "Центр речевого и функционального развития Дружок"
+            Образовательный центр «Дружок» Улан-Удэ
           </p>
           <p className="text-sm text-muted-foreground">
             © 2024 Все права защищены
