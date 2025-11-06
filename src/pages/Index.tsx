@@ -89,6 +89,7 @@ const Index = () => {
             <a href="#about" className="text-sm font-medium hover:text-primary transition-colors">О центре</a>
             <a href="#specialists" className="text-sm font-medium hover:text-primary transition-colors">Специалисты</a>
             <a href="#services" className="text-sm font-medium hover:text-primary transition-colors">Услуги</a>
+            <a href="#projects" className="text-sm font-medium hover:text-primary transition-colors">Проекты</a>
             <a href="#gallery" className="text-sm font-medium hover:text-primary transition-colors">Галерея</a>
             <a href="#contacts" className="text-sm font-medium hover:text-primary transition-colors">Контакты</a>
           </nav>
@@ -206,7 +207,141 @@ const Index = () => {
         </div>
       </section>
 
-      <section id="gallery" className="py-20">
+      <section id="projects" className="py-20">
+        <div className="container">
+          <h2 className="text-3xl md:text-5xl font-bold text-center mb-12">Проекты</h2>
+          <div className="max-w-5xl mx-auto">
+            <Card className="overflow-hidden rounded-3xl border-2">
+              <div className="bg-gradient-to-r from-primary/20 to-accent/30 p-8">
+                <div className="flex items-center gap-4 mb-4">
+                  <div className="bg-white rounded-full p-4">
+                    <Icon name="Sparkles" className="text-primary" size={40} />
+                  </div>
+                  <div>
+                    <h3 className="text-3xl font-bold text-primary">Проект «Мама-логопед»</h3>
+                    <p className="text-lg text-muted-foreground">Совместная работа родителя, логопеда и ребёнка</p>
+                  </div>
+                </div>
+              </div>
+              <CardContent className="p-8 space-y-6">
+                <div>
+                  <h4 className="text-xl font-semibold mb-3 flex items-center gap-2">
+                    <Icon name="Target" className="text-primary" />
+                    Цель проекта
+                  </h4>
+                  <p className="text-muted-foreground leading-relaxed">
+                    Уменьшение количества дошкольников с речевыми нарушениями в Октябрьском районе г. Улан-Удэ 
+                    и подготовка родителей детей с фонетико-фонематическим нарушением речи (ФФН) к самостоятельной 
+                    логопедической коррекции.
+                  </p>
+                </div>
+
+                <div className="grid md:grid-cols-2 gap-6">
+                  <Card className="bg-secondary/30 border-0 rounded-2xl">
+                    <CardHeader>
+                      <CardTitle className="flex items-center gap-2 text-lg">
+                        <Icon name="Users" className="text-primary" />
+                        Целевая группа
+                      </CardTitle>
+                    </CardHeader>
+                    <CardContent>
+                      <p className="text-sm">Родители и дети 6-7 лет с ФФН. Не менее 15 семей получат бесплатную помощь.</p>
+                    </CardContent>
+                  </Card>
+
+                  <Card className="bg-accent/30 border-0 rounded-2xl">
+                    <CardHeader>
+                      <CardTitle className="flex items-center gap-2 text-lg">
+                        <Icon name="MapPin" className="text-primary" />
+                        Место проведения
+                      </CardTitle>
+                    </CardHeader>
+                    <CardContent>
+                      <p className="text-sm">Занятия проводятся на базе Образовательного центра «Дружок» на безвозмездной основе.</p>
+                    </CardContent>
+                  </Card>
+                </div>
+
+                <div>
+                  <h4 className="text-xl font-semibold mb-3 flex items-center gap-2">
+                    <Icon name="Lightbulb" className="text-primary" />
+                    Уникальная идея
+                  </h4>
+                  <p className="text-muted-foreground leading-relaxed">
+                    Запустить процесс коррекции речи детей с ФФН через совместную работу родитель-логопед-ребёнок, 
+                    где логопед обучит родителя основам автоматизации звуков. Родитель продолжит работу под кураторством специалиста.
+                  </p>
+                </div>
+
+                <div>
+                  <h4 className="text-xl font-semibold mb-4 flex items-center gap-2">
+                    <Icon name="ClipboardList" className="text-primary" />
+                    Направления деятельности
+                  </h4>
+                  <div className="space-y-3">
+                    <div className="flex gap-3 items-start">
+                      <div className="bg-primary/20 rounded-full p-2 mt-1">
+                        <Icon name="Check" className="text-primary" size={16} />
+                      </div>
+                      <p className="text-sm flex-1">Коррекционные занятия логопеда с ребёнком по развитию фонематических процессов и постановке нарушенных звуков</p>
+                    </div>
+                    <div className="flex gap-3 items-start">
+                      <div className="bg-primary/20 rounded-full p-2 mt-1">
+                        <Icon name="Check" className="text-primary" size={16} />
+                      </div>
+                      <p className="text-sm flex-1">Обучение родителей приёмам закрепления навыков развития фонематических процессов и автоматизации звуков</p>
+                    </div>
+                    <div className="flex gap-3 items-start">
+                      <div className="bg-primary/20 rounded-full p-2 mt-1">
+                        <Icon name="Check" className="text-primary" size={16} />
+                      </div>
+                      <p className="text-sm flex-1">Продолжение процесса коррекции родителями под контролем логопеда</p>
+                    </div>
+                  </div>
+                </div>
+
+                <div>
+                  <h4 className="text-xl font-semibold mb-3 flex items-center gap-2">
+                    <Icon name="TrendingUp" className="text-primary" />
+                    Ожидаемые результаты
+                  </h4>
+                  <div className="bg-muted/50 p-4 rounded-2xl space-y-2">
+                    <p className="text-sm flex items-start gap-2">
+                      <Icon name="Star" className="text-primary mt-1" size={16} />
+                      <span>Запущен процесс коррекции речевых нарушений не менее чем у 15 детей</span>
+                    </p>
+                    <p className="text-sm flex items-start gap-2">
+                      <Icon name="Star" className="text-primary mt-1" size={16} />
+                      <span>Родители на практике освоят приёмы автоматизации звуков</span>
+                    </p>
+                    <p className="text-sm flex items-start gap-2">
+                      <Icon name="Star" className="text-primary mt-1" size={16} />
+                      <span>Создан комплект для тиражирования модели «Мама-логопед»</span>
+                    </p>
+                    <p className="text-sm flex items-start gap-2">
+                      <Icon name="Star" className="text-primary mt-1" size={16} />
+                      <span><strong>Главный результат:</strong> чистая речь обучающихся (норма речевого развития)</span>
+                    </p>
+                  </div>
+                </div>
+
+                <div className="bg-gradient-to-r from-primary/10 to-accent/10 p-6 rounded-2xl">
+                  <h4 className="text-lg font-semibold mb-2 flex items-center gap-2">
+                    <Icon name="AlertCircle" className="text-primary" />
+                    Почему это важно?
+                  </h4>
+                  <p className="text-sm text-muted-foreground">
+                    Лёгкая форма ФФН часто уступает другим более сложным речевым нарушениям, и дети переходят в школу без необходимой коррекции. 
+                    Это существенно затруднит усвоение ребёнком основ грамоты, русского языка и литературы.
+                  </p>
+                </div>
+              </CardContent>
+            </Card>
+          </div>
+        </div>
+      </section>
+
+      <section id="gallery" className="py-20 bg-muted/30">
         <div className="container">
           <h2 className="text-3xl md:text-5xl font-bold text-center mb-12">Галерея</h2>
           <div className="grid md:grid-cols-3 gap-6">
